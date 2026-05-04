@@ -1,0 +1,88 @@
+baseURL = "https://infotechanswers.com/"
+languageCode = "en-us"
+title = "InfoTechAnswers"
+theme = "PaperMod"
+
+[params]
+  # site description for SEO
+  description = "Your source for technology answers"
+  # author name
+  author = "Benjamin"
+  # whether to show the powered by Hugo and theme
+  poweredBy = true
+  # date format
+  dateFormat = "Jan 2, 2006"
+  # pagination
+  paginate = 10
+  # enable dark/light mode switch
+  themeVariants = ['auto', 'light', 'dark']
+  # default theme variant
+  defaultTheme = 'auto'
+  # show reading time
+  ShowReadingTime = true
+  # show share buttons
+  ShowShareButtons = true
+  # show post navigation
+  ShowPostNavLinks = true
+  # show breadcrumbs
+  ShowBreadCrumbs = true
+  # show code copy buttons
+  ShowCodeCopyButtons = true
+  # disable special first post on home
+  DisableSpecialFirstPost = false
+  # disable full width for TOC
+  DisableFullWidthTOC = false
+  # comments (set provider and id if needed)
+  # comments = false
+  # assets
+  # disableHLJS = false # to highlight with highlight.js
+  # disableFloatingAnchors = false
+  # license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  # footer custom text
+  # footer = ""
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[markup]
+  # highlight code blocks
+  [markup.highlight]
+    # anchorLineNos = true
+    # codeFences = true
+    # guessSyntax = true
+    # lineNos = true
+    # noClasses = false
+    # style = "monokai"
+    # tabWidth = 2
+  # table of contents
+  [markup.tableOfContents]
+    # endLevel = 3
+    # ordered = false
+    # startLevel = 2
+  # markup
+  [markup.markup]
+    # defaultMarkdownHandler = "goldmark"
+    # highlight = true
+    # quotefTrue
+    # footnotes = true
+    # hrefTargetBlank = true
+    # rawHtml = false
+    # rawHtmlExtension = true
+    # definitionLists = true
+    # linkify = true
+    # smartypants = true
+    # fractions = false
