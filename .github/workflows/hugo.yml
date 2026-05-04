@@ -9,11 +9,13 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This is important for pushing to gh-pages
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Important for Hugo themes
-          fetch-depth: 0    # Needed for git info
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -26,8 +28,9 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           force_orphan: true
+          # Optional: enable Jekyll to be disabled
+          # jekyll: false
