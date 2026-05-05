@@ -41,6 +41,8 @@ theme = "PaperMod"
   # footer custom text
   # footer = ""
 
+[params.label]
+  icon = "images/site-logo.jpeg"
 [menu]
   [[menu.main]]
     identifier = "blog"
